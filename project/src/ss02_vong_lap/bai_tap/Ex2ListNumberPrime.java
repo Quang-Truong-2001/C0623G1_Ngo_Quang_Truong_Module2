@@ -10,18 +10,18 @@ public class Ex2ListNumberPrime {
         int n = 2;
         System.out.println("Enter amount prime numbers");
         amount = input.nextInt();
+        int timesDivisibleBy2 = 0;
         while (count < amount) {
-            int countOne = 0;
             for (int i = 2; i < n; i++) {
                 if (n % i == 0) {
-                    countOne++;
+                    timesDivisibleBy2++;
                 }
             }
-            if (countOne == 0) {
+            if (timesDivisibleBy2 == 0) {
                 System.out.println(n + " là số nguyên tố");
                 count++;
             }
-            countOne = 0;
+            timesDivisibleBy2=0;
             n++;
         }
     }
