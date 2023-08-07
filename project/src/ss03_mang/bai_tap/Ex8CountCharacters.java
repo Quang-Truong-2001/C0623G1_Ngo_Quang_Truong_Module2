@@ -7,14 +7,14 @@ public class Ex8CountCharacters {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Nhập chuỗi");
-        String str = scanner.nextLine();
+        String string = scanner.nextLine();
 
         System.out.println("Nhập ký tự");
         char character = scanner.nextLine().charAt(0);
         int count = 0;
 
-        for (int i = 0; i < str.length(); i++) {
-            if (character == str.charAt(i)) {
+        for (int i = 0; i < string.length(); i++) {
+            if (character == string.charAt(i)) {
                 count++;
             }
         }
