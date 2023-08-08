@@ -1,4 +1,4 @@
-package ss05_acess_modifier_static_method_static_property.bai_tap.Ex2;
+package ss05_acess_modifier_static_method_static_property.bai_tap.Ex2ClassStudent;
 
 public class Student {
     private String name="john";
