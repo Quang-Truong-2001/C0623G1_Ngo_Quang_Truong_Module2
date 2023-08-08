@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0c12fbd-14e9-4229-ae2d-294a341cfc67" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/bai_tap/Ex1DisplayDrawing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/bai_tap/Ex2ListNumberPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/bai_tap/Ex3PrimeNumberFrom1To100.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/thuc_hanh/CheckPrimeNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/thuc_hanh/DrawingMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/thuc_hanh/GreatCommonFactor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/thuc_hanh/InterestCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex1DeleteAnElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex2AddElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex3Merge2Arrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex4FindMaxValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex5FindMinValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex6SumColumn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex7SumDiagonal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex8CountCharacters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/FIndMaxElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/FindElementInArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/FindMinimum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/PassStudent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/ReverseArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/TemperatureConvert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/bai_tap/Ex1QuadraticEquation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/bai_tap/Ex2StopWatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/bai_tap/Ex3Fan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/bai_tap/Fan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/ss04_oop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/thuc_hanh/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/bai_tap/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/bai_tap/Ex1Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/bai_tap/Ex2CurrencyConversion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/bai_tap/Ex3ReadNumberToString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/BmiCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/DayOfMonth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/LeapYearCaculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/LinearEquationResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/OperatorExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/VariableDataType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss04_oop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss04_oop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss04_oop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss04_oop/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss04_oop/ss04_oop.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2TdjUPRE5p2IXIsvqWmgZZLKDIb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/C0623G1_Ngo_Quang_Truong_Module2/project"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Ex3Fan (1)">
+    <configuration name="Ex2StopWatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss04_oop.bai_tap.Ex2StopWatch" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss04_oop.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex3Fan (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss04_oop.bai_tap.Ex3Fan" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss04_oop.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex3Fan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss04_oop.bai_tap.Ex3Fan" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss04_oop.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex7SumDiagonal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss03_mang.bai_tap.Ex7SumDiagonal" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss03_mang.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss04_oop.bai_tap.Fan" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss04_oop.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Ex3Fan (1)" />
+        <item itemvalue="Application.Ex3Fan" />
+        <item itemvalue="Application.Fan" />
+        <item itemvalue="Application.Ex2StopWatch" />
+        <item itemvalue="Application.Ex7SumDiagonal" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0c12fbd-14e9-4229-ae2d-294a341cfc67" name="Changes" comment="" />
+      <created>1691379866463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691379866463</updated>
+      <workItem from="1691379867746" duration="18224000" />
+      <workItem from="1691422486799" duration="328000" />
+      <workItem from="1691422840798" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

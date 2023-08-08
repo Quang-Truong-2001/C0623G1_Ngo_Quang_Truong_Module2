@@ -15,7 +15,7 @@ public class Ex1QuadraticEquation {
         int numberC = scanner.nextInt();
         if (numberA != 0) {
             Ex1QuadraticEquation one = new Ex1QuadraticEquation(numberA, numberB, numberC);
-            float denta = one.getDiscriminant(numberA, numberB, numberC);
+            float denta = one.getDiscriminant();
             if (denta > 0) {
                 double r1 = one.getRoot1(denta);
                 double r2 = one.getRoot2(denta);
@@ -66,18 +66,18 @@ public class Ex1QuadraticEquation {
         this.numberC = numberC;
     }
 
-    public float getDiscriminant(int numberA, int numberB, int numberC) {
-        float denta = numberB * numberB - 4 * numberA * numberC;
+    public float getDiscriminant() {
+        float denta = this.numberB * this.numberB - 4 * this.numberA * this.numberC;
         return denta;
     }
 
     public double getRoot1(float denta) {
-        double r1 = (-numberB + Math.sqrt(denta)) / 2 * numberA;
+        double r1 = (-this.numberB + Math.sqrt(denta)) / 2 * this.numberA;
         return r1;
     }
 
     public double getRoot2(float denta) {
-        double r2 = (-numberB - Math.sqrt(denta)) / 2 * numberA;
+        double r2 = (-this.numberB - Math.sqrt(denta)) / 2 * this.numberA;
         return r2;
     }
 }

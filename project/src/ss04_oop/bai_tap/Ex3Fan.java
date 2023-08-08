@@ -33,7 +33,6 @@ public class Ex3Fan {
     public int getSpeed() {
         return speed;
     }
-
     public void setSpeed(int speed) {
         this.speed = speed;
     }
@@ -61,7 +60,7 @@ public class Ex3Fan {
     public void setColor(String color) {
         this.color = color;
     }
-    public String getSpeed1(){
+    public String getSpeedOfFan(){
         String result;
         if(this.speed==1){
             result="SLOW";
@@ -74,7 +73,7 @@ public class Ex3Fan {
     }
     public String display(){
         if(this.status==true){
-            return "Speed:"+this.speed+"\n"+
+            return "Speed:"+this.getSpeedOfFan()+"\n"+
                     "Color:"+this.color+"\n"+
                     "Radius:"+this.radius+"\n"+
                     "Fan is on";
