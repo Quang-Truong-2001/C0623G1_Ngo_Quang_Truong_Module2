@@ -67,11 +67,11 @@ public class Ex1QuadraticEquation {
     }
 
     public double getRoot1() {
-        return (-this.numberB + Math.sqrt(getDiscriminant())) / 2 * this.numberA;
+        return (-this.numberB + Math.sqrt(this.getDiscriminant())) / 2 * this.numberA;
     }
 
     public double getRoot2() {
-        return (-this.numberB - Math.sqrt(getDiscriminant())) / 2 * this.numberA;
+        return (-this.numberB - Math.sqrt(this.getDiscriminant())) / 2 * this.numberA;
     }
     public double getRoot(){
         return (-this.numberB/(2*this.numberA));
