@@ -2,65 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0c12fbd-14e9-4229-ae2d-294a341cfc67" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/bai_tap/Ex1DisplayDrawing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/bai_tap/Ex2ListNumberPrime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/bai_tap/Ex3PrimeNumberFrom1To100.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/thuc_hanh/CheckPrimeNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/thuc_hanh/DrawingMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/thuc_hanh/GreatCommonFactor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss02_vong_lap/thuc_hanh/InterestCalculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex1DeleteAnElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex2AddElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex3Merge2Arrays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex4FindMaxValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex5FindMinValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex6SumColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex7SumDiagonal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/bai_tap/Ex8CountCharacters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/FIndMaxElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/FindElementInArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/FindMinimum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/PassStudent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/ReverseArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss03_mang/thuc_hanh/TemperatureConvert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/bai_tap/Ex1QuadraticEquation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/bai_tap/Ex2StopWatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/bai_tap/Ex3Fan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/bai_tap/Fan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/ss04_oop.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss04_oop/thuc_hanh/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/bai_tap/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/bai_tap/Ex1Hello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/bai_tap/Ex2CurrencyConversion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/bai_tap/Ex3ReadNumberToString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/BmiCalculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/DayOfMonth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/LeapYearCaculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/LinearEquationResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/OperatorExpression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/SystemTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/ss1_introduction_java/thuc_hanh/VariableDataType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss04_oop/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss04_oop/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss04_oop/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss04_oop/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss04_oop/ss04_oop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +29,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/C0623G1_Ngo_Quang_Truong_Module2/project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/C0623G1_Ngo_Quang_Truong_Module2/project&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Ex3Fan (1)">
     <configuration name="Ex2StopWatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss04_oop.bai_tap.Ex2StopWatch" />
@@ -181,6 +124,7 @@
       <workItem from="1691379867746" duration="18224000" />
       <workItem from="1691422486799" duration="328000" />
       <workItem from="1691422840798" duration="15000" />
+      <workItem from="1691487509564" duration="10000" />
     </task>
     <servers />
   </component>

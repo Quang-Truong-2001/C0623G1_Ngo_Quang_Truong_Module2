@@ -15,17 +15,13 @@ public class Ex1QuadraticEquation {
         int numberC = scanner.nextInt();
         if (numberA != 0) {
             Ex1QuadraticEquation one = new Ex1QuadraticEquation(numberA, numberB, numberC);
-            float denta = one.getDiscriminant();
-            if (denta > 0) {
-                double r1 = one.getRoot1(denta);
-                double r2 = one.getRoot2(denta);
+            if (one.getDiscriminant() > 0) {
                 System.out.println("Phương trình có 2 nghiệm phân biệt");
-                System.out.println("r1 = " + r1);
-                System.out.println("r2 = " + r2);
-            } else if (denta == 0) {
+                System.out.println("r1 = " + one.getRoot1());
+                System.out.println("r2 = " + one.getRoot2());
+            } else if (one.getDiscriminant() == 0) {
                 System.out.println("Phương trình có một nghiệm");
-                float r = -numberB / 2 * numberA;
-                System.out.println("r1 = r2 = " + r);
+                System.out.println("r1 = r2 = " + one.getRoot());
             } else {
                 System.out.println("The equation has no roots");
             }
@@ -67,17 +63,18 @@ public class Ex1QuadraticEquation {
     }
 
     public float getDiscriminant() {
-        float denta = this.numberB * this.numberB - 4 * this.numberA * this.numberC;
-        return denta;
+        return this.numberB * this.numberB - 4 * this.numberA * this.numberC;
     }
 
-    public double getRoot1(float denta) {
-        double r1 = (-this.numberB + Math.sqrt(denta)) / 2 * this.numberA;
-        return r1;
+    public double getRoot1() {
+        return (-this.numberB + Math.sqrt(getDiscriminant())) / 2 * this.numberA;
     }
 
-    public double getRoot2(float denta) {
-        double r2 = (-this.numberB - Math.sqrt(denta)) / 2 * this.numberA;
-        return r2;
+    public double getRoot2() {
+        return (-this.numberB - Math.sqrt(getDiscriminant())) / 2 * this.numberA;
     }
+    public double getRoot(){
+        return (-this.numberB/(2*this.numberA));
+    }
+
 }
