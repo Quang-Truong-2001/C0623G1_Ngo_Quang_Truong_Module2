@@ -17,10 +17,18 @@ public class Point2D {
         return x;
     }
 
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
 
     public float getY() {
         return y;
     }
+
 
     public void setXY(float x,float y){
         this.x=x;
