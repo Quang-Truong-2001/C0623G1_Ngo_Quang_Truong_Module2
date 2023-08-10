@@ -1,7 +1,7 @@
 package ss07_Abstract_Class_Interface.bai_tap.ex1;
 
-public class Circle extends Shape {
-    private double radius = 1.0;
+public class Circle extends ss07_Abstract_Class_Interface.bai_tap.ex1.Shape implements Resizeable {
+    private double radius;
 
     public Circle() {
     }
@@ -37,5 +37,10 @@ public class Circle extends Shape {
                 + getRadius()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public double resize() {
+        return this.getArea()*Math.random()/100+this.getArea();
     }
 }

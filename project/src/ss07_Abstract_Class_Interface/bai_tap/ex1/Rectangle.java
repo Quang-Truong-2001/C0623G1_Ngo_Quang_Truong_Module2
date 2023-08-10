@@ -1,8 +1,8 @@
 package ss07_Abstract_Class_Interface.bai_tap.ex1;
 
-public class Rectangle extends Shape {
-    private double width = 1.0;
-    private double length = 1.0;
+public class Rectangle extends ss07_Abstract_Class_Interface.bai_tap.ex1.Shape implements Resizeable{
+    private double width;
+    private double length;
 
     public Rectangle() {
     }
@@ -50,5 +50,10 @@ public class Rectangle extends Shape {
                 + getLength()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public double resize() {
+        return this.getArea()*Math.random()+this.getArea();
     }
 }
