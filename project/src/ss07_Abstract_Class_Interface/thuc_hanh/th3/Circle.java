@@ -2,19 +2,19 @@ package ss07_Abstract_Class_Interface.thuc_hanh.th3;
 
 public class Circle {
     private double radius;
-    private String color;
+    private String Color;
     private boolean filled;
-
-    public Circle(int radius) {
-        this.radius = radius;
-    }
 
     public Circle() {
     }
 
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
     public Circle(double radius, String color, boolean filled) {
         this.radius = radius;
-        this.color = color;
+        Color = color;
         this.filled = filled;
     }
 
@@ -27,11 +27,11 @@ public class Circle {
     }
 
     public String getColor() {
-        return color;
+        return Color;
     }
 
     public void setColor(String color) {
-        this.color = color;
+        Color = color;
     }
 
     public boolean isFilled() {
