@@ -22,7 +22,14 @@ public class Square extends ss07_Abstract_Class_Interface.bai_tap.ex1.Shape impl
     }
 
     @Override
-    public double resize() {
-        return this.getArea()+this.getArea()*Math.random();
+    public void resize(double percent) {
+        this.setSide(this.side+this.side*(percent/100));
+    }
+
+    @Override
+    public String toString() {
+        return "Square{"+
+                "height="+this.getSide()+
+                "Area="+this.getArea()+"}";
     }
 }

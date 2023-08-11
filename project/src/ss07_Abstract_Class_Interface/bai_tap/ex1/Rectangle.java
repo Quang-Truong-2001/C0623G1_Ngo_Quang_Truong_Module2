@@ -44,16 +44,16 @@ public class Rectangle extends ss07_Abstract_Class_Interface.bai_tap.ex1.Shape i
 
     @Override
     public String toString() {
-        return "A Rectangle with width="
-                + getWidth()
-                + " and length="
-                + getLength()
-                + ", which is a subclass of "
-                + super.toString();
+        return "Rectangle{"+
+                "width="+this.getWidth()+
+                "length="+this.getLength()+
+                "Area="+this.getArea()+"}";
     }
 
+
     @Override
-    public double resize() {
-        return this.getArea()*Math.random()+this.getArea();
+    public void resize(double percent) {
+        setWidth(this.width+this.width*percent/100);
+        setLength(this.length+this.length*percent/100);
     }
 }

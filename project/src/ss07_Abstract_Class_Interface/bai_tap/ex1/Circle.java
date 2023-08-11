@@ -33,14 +33,14 @@ public class Circle extends ss07_Abstract_Class_Interface.bai_tap.ex1.Shape impl
 
     @Override
     public String toString() {
-        return "A Circle with radius="
-                + getRadius()
-                + ", which is a subclass of "
-                + super.toString();
+        return "Circle{"+
+                "radius="+this.getRadius()+
+                "Area="+this.getArea()+"}";
     }
 
+
     @Override
-    public double resize() {
-        return this.getArea()*Math.random()/100+this.getArea();
+    public void resize(double percent) {
+        this.setRadius(this.radius+this.radius*percent/100);
     }
 }
