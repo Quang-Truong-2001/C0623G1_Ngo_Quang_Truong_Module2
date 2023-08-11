@@ -6,7 +6,6 @@ public class FizzBuzz {
         boolean isBuzz = number % 5 == 0;
         if (isFizz && isBuzz)
             return "FizzBuzz";
-
         if (isFizz)
             return "Fizz";
 
