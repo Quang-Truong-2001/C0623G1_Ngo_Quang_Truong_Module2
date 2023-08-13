@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a771804-86ff-4324-a673-3b1195345534" name="Changes" comment="" />
+    <list default="true" id="1a771804-86ff-4324-a673-3b1195345534" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/project/src/ss08_clean_code/ss08_clean_code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/out/production/project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/out/production/project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/out/production/project/ss08_clean_code/mvc/view/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/out/production/project/ss08_clean_code/mvc/view/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/ss03_mang/bai_tap/Ex1DeleteAnElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/ss03_mang/bai_tap/Ex1DeleteAnElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/ss08_clean_code/mvc/view/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/ss08_clean_code/mvc/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/ss08_clean_code/mvc/view/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/ss08_clean_code/mvc/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/ss08_clean_code/mvc/view/StudentManagerProgramView.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/ss08_clean_code/mvc/view/StudentManagerProgramView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/ss08_clean_code/mvc/view/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/ss08_clean_code/mvc/model/Teacher.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,15 +33,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/C0623G1_Ngo_Quang_Truong_Module2/project/src"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/C0623G1_Ngo_Quang_Truong_Module2/project/src&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,6 +52,7 @@
       <updated>1690865966092</updated>
       <workItem from="1690865969607" duration="480000" />
       <workItem from="1691487486394" duration="22000" />
+      <workItem from="1691830009311" duration="41000" />
     </task>
     <servers />
   </component>

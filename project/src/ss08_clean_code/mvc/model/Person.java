@@ -1,4 +1,4 @@
-package ss08_clean_code.mvc.view;
+package ss08_clean_code.mvc.model;
 
 public abstract class Person {
     private String name;

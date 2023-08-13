@@ -1,6 +1,8 @@
-package ss08_clean_code.mvc.view;
+package ss08_clean_code.mvc.model;
 
-public class Student extends Person{
+import ss08_clean_code.mvc.model.Person;
+
+public class Student extends Person {
     private String clazz;
     private float point;
     public Student(String name, String birthDay, String gender, String clazz, float point) {

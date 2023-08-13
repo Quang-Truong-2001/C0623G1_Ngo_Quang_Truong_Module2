@@ -1,6 +1,8 @@
-package ss08_clean_code.mvc.view;
+package ss08_clean_code.mvc.model;
 
-public class Teacher extends Person{
+import ss08_clean_code.mvc.model.Person;
+
+public class Teacher extends Person {
     private String speciality;
 
     public Teacher(String name, String birthDay, String gender, String speciality) {

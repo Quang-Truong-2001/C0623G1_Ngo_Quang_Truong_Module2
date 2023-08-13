@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0c12fbd-14e9-4229-ae2d-294a341cfc67" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ss07_Abstract_Class_Interface/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ss07_Abstract_Class_Interface/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss08_clean_code/ss08_clean_code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/project/ss08_clean_code/mvc/view/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/project/ss08_clean_code/mvc/view/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss03_mang/bai_tap/Ex1DeleteAnElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss03_mang/bai_tap/Ex1DeleteAnElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss08_clean_code/mvc/view/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss08_clean_code/mvc/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss08_clean_code/mvc/view/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss08_clean_code/mvc/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss08_clean_code/mvc/view/StudentManagerProgramView.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss08_clean_code/mvc/view/StudentManagerProgramView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss08_clean_code/mvc/view/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss08_clean_code/mvc/model/Teacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +42,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/C0623G1_Ngo_Quang_Truong_Module2/project&quot;
+    &quot;last_opened_file_path&quot;: &quot;E:/C0623G1_Ngo_Quang_Truong_Module2/project/src/ss08_clean_code&quot;
   }
 }</component>
   <component name="RunManager" selected="Application.Ex3Fan (1)">
@@ -125,6 +134,8 @@
       <workItem from="1691422840798" duration="15000" />
       <workItem from="1691487509564" duration="10000" />
       <workItem from="1691675332911" duration="14000" />
+      <workItem from="1691803959819" duration="626000" />
+      <workItem from="1691830052117" duration="15000" />
     </task>
     <servers />
   </component>
