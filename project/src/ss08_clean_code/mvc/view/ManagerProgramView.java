@@ -1,10 +1,16 @@
 package ss08_clean_code.mvc.view;
 
 import ss08_clean_code.mvc.controller.OptionController;
+import ss08_clean_code.mvc.model.Person;
+import ss08_clean_code.mvc.model.Student;
+import ss08_clean_code.mvc.model.Teacher;
 
 import java.util.Scanner;
 
 public class ManagerProgramView {
+    Scanner scanner = new Scanner(System.in);
+    private int select;
+    private int option;
     public void showMenu() {
         System.out.println("CHƯƠNG TRÌNH QUẢN LÝ SINH VIÊN ");
         System.out.println("Chọn chức năng theo số (để tiếp tục)");
@@ -15,8 +21,6 @@ public class ManagerProgramView {
     }
 
     public void selectFunction() throws Exception {
-        int option;
-        Scanner scanner = new Scanner(System.in);
         do {
             showMenu();
             System.out.println("Chọn chức năng: ");
@@ -25,8 +29,6 @@ public class ManagerProgramView {
         if (option == 4) {
             System.exit(7);
         }
-
-        int select;
         do {
             System.out.println("Chọn đối tượng");
             System.out.println("1. Giáo viên");
@@ -35,5 +37,12 @@ public class ManagerProgramView {
         } while (select < 0 || select > 2);
         OptionController optionController = new OptionController();
         optionController.optionFunction(select, option);
+    }
+    public Teacher inputTeacherInformation() {
+        Teacher teacher=new Teacher();
+        System.out.println("Nhập id");
+        teacher.setId(this.scanner.nextLine());
+        System.out.println("Nhập tên:");
+        teacher.setName(this.scanner.nextLine());
     }
 }

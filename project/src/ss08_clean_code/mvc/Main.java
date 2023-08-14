@@ -1,5 +1,6 @@
 package ss08_clean_code.mvc;
 
+import ss08_clean_code.mvc.model.Teacher;
 import ss08_clean_code.mvc.view.ManagerProgramView;
 
 public class Main {

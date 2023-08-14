@@ -5,5 +5,5 @@ public interface IFunction {
 
     void delete(int select);
 
-    void display(int select);
+    void displayList(int select);
 }

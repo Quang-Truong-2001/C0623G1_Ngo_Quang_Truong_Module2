@@ -3,15 +3,16 @@ package ss08_clean_code.bai_tap;
 public class TennisGame {
     public static String getScore(String playerOneName, String playerTwoName, int scoreOfPersonOne, int scoreOfPersonTwo) {
         if (scoreOfPersonOne == scoreOfPersonTwo) {
-            return displayScore(scoreOfPersonOne);
+            return getEqualScore(scoreOfPersonOne);
         } else if (scoreOfPersonOne >= 4 || scoreOfPersonTwo >= 4) {
-            return displayScoreCase2(scoreOfPersonOne, scoreOfPersonTwo);
+            return getWinScore(scoreOfPersonOne, scoreOfPersonTwo);
         } else {
-            return displayScoreCase3(scoreOfPersonOne, scoreOfPersonTwo);
+            return getUnequalScore(scoreOfPersonOne, scoreOfPersonTwo);
         }
     }
 
-    private static String displayScore(int scoreOfPersonOne) {
+    private static String getEqualScore(int scoreOfPersonOne) {
+        
         switch (scoreOfPersonOne) {
             case 0:
                 return "Love-All";
@@ -26,7 +27,7 @@ public class TennisGame {
         }
     }
 
-    private static String displayScoreCase2(int scoreOfPersonOne, int scoreOfPersonTwo) {
+    private static String getWinScore(int scoreOfPersonOne, int scoreOfPersonTwo) {
         int scoreOfPersonOneMinusPersonTwo = scoreOfPersonOne - scoreOfPersonTwo;
         if (scoreOfPersonOneMinusPersonTwo == 1) {
             return "Advantage player1";
@@ -39,7 +40,7 @@ public class TennisGame {
         }
     }
 
-    private static String displayScoreCase3(int scoreOfPersonOne, int scoreOfPersonTwo) {
+    private static String getUnequalScore(int scoreOfPersonOne, int scoreOfPersonTwo) {
         int tempScore = 0;
         String result = "";
         for (int numberPlayer = 1; numberPlayer < 3; numberPlayer++) {

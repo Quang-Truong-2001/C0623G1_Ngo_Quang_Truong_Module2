@@ -5,9 +5,12 @@ import ss08_clean_code.mvc.model.Person;
 public class Teacher extends Person {
     private String speciality;
 
-    public Teacher(String name, String birthDay, String gender, String speciality) {
-        super(name, birthDay, gender);
-        this.speciality=speciality;
+    public Teacher(String id, String name, String birthDay, String gender, String speciality) {
+        super(id, name, birthDay, gender);
+        this.speciality = speciality;
+    }
+
+    public Teacher() {
     }
 
     public String getSpeciality() {

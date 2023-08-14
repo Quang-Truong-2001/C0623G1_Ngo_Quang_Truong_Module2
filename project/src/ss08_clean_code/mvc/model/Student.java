@@ -5,10 +5,14 @@ import ss08_clean_code.mvc.model.Person;
 public class Student extends Person {
     private String clazz;
     private float point;
-    public Student(String name, String birthDay, String gender, String clazz, float point) {
-        super(name, birthDay, gender);
-        this.clazz=clazz;
-        this.point=point;
+
+    public Student(String id, String name, String birthDay, String gender, String clazz, float point) {
+        super(id, name, birthDay, gender);
+        this.clazz = clazz;
+        this.point = point;
+    }
+
+    public Student() {
     }
 
     public String getClazz() {

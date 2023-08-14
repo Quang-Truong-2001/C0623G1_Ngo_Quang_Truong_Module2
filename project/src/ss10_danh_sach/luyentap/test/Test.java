@@ -33,9 +33,9 @@ public class Test {
                     System.out.println("Nhập tên: ");
                     String name = scanner.nextLine();
                     System.out.println("Nhập năm sinh: ");
-                    int dateBirth = scanner.nextInt();
+                    int dateBirth = Integer.parseInt(scanner.nextLine());
                     System.out.println("Nhập điểm trung bình");
-                    float averagePoint = scanner.nextFloat();
+                    float averagePoint = Float.parseFloat(scanner.nextLine());
                     Student student = new Student(idStudent, name, dateBirth, averagePoint);
                     studentList.addStudent(student);
                     break;

@@ -1,4 +1,6 @@
-package ss10_danh_sach.thuc_hanh;
+package ss10_danh_sach.thuc_hanh.th1;
+
+import ss10_danh_sach.thuc_hanh.th1.MyList;
 
 public class MyListTest {
     public static void main(String[] args) {
@@ -6,13 +8,18 @@ public class MyListTest {
         listInteger.add(1);
         listInteger.add(2);
         listInteger.add(3);
+        listInteger.add(3);
         listInteger.add(4);
+        listInteger.add(5);
+        listInteger.add(6);
 
         System.out.println("element 4: "+listInteger.get(4));
         System.out.println("element 1: "+listInteger.get(1));
         System.out.println("element 2: "+listInteger.get(2));
 
-        listInteger.get(6);
-        System.out.println("element 6: "+listInteger.get(6));
+//        listInteger.get(6);
+//        System.out.println("element 6: "+listInteger.get(6));
+        listInteger.get(-1);
+        System.out.println("element -1: "+listInteger.get(-1));
     }
 }

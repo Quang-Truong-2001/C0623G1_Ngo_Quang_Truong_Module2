@@ -1,6 +1,6 @@
 package ss07_Abstract_Class_Interface.bai_tap.ex1;
 
-public class Circle extends ss07_Abstract_Class_Interface.bai_tap.ex1.Shape implements Resizeable {
+public class Circle extends Shape implements Resizeable {
     private double radius;
 
     public Circle() {

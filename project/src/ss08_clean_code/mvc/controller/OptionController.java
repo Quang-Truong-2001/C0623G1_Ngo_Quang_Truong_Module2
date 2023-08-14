@@ -19,7 +19,7 @@ public class OptionController {
                 iFunction.delete(select);
                 break;
             case 3:
-                iFunction.display(select);
+                iFunction.displayList(select);
                 break;
         }
     }
