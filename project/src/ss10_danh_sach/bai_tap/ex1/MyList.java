@@ -96,12 +96,12 @@ public class MyList<E> {
         }
     }
 
-    public int length() {
-        return array.length;
-    }
 
     public E get(int index) {
-        return (E) array[index];
+        if(index<0||index>=size) {
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        return  (E) array[index];
     }
 
     public void clear() {

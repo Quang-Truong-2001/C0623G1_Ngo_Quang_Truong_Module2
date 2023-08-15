@@ -20,4 +20,11 @@ public class Teacher extends Person {
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "speciality='" + speciality + '\'' +
+                '}'+"\n";
+    }
 }

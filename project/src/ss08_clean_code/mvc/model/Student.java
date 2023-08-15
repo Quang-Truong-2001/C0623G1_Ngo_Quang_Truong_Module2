@@ -30,4 +30,12 @@ public class Student extends Person {
     public void setPoint(float point) {
         this.point = point;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+
+                "clazz='" + clazz + '\'' +
+                ", point=" + point +
+                '}';
+    }
 }
