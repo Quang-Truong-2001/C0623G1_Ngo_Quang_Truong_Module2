@@ -5,9 +5,9 @@ import java.util.Stack;
 
 public class Ex1String {
     public static void main(String[] args) {
-        Stack<Character> stack=new Stack<>();
+        Stack<String> stack=new Stack<>();
         String str="ngoquangtruong";
-        char[] arr=str.toCharArray();
+        String[] arr=str.split("");
         System.out.println(Arrays.toString(arr));
         for(int i=0;i<arr.length;i++){
             stack.push(arr[i]);

@@ -5,36 +5,37 @@ import java.util.Stack;
 public class Bracket {
     public static void main(String[] args) {
 
-        String str="s*(s–a*(s–b)*(s–c)";
-        char[] arr=str.toCharArray();
+        String str = "(s–a)*(s–b)*(s–c)";
+        String[] arr = str.split("");
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);;
+            System.out.print(arr[i]);
         }
         System.out.println();
-        if(checkBracket(arr)){
+        if (checkBracket(arr)) {
             System.out.println("Bracket is well");
         } else {
-            System.out.println("Bracket is well");
+            System.out.println("Bracket is not well");
         }
     }
-    public static boolean checkBracket(char[] arr){
-        Stack<Character> bStack=new Stack<>();
-        Stack<Character> left=new Stack<>();
+
+    public static boolean checkBracket(String[] arr) {
+        Stack<String> bStack = new Stack<>();
+        Stack<String> left = new Stack<>();
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i]=='('){
+            if (arr[i].equals("(")) {
                 bStack.push(arr[i]);
-            } else if (arr[i]==')'){
-                if(bStack.isEmpty()){
+            } else if (arr[i].equals(")")) {
+                if (bStack.empty()) {
                     return false;
                 } else {
                     left.push(arr[i]);
                 }
             }
-            if(arr[i]==left){
-                return true;
-            } else {
-                return false;
-            }
+        }
+        if (bStack.size() == left.size()) {
+            return true;
+        } else {
+            return false;
         }
 
     }

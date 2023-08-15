@@ -4,20 +4,19 @@ import java.util.TreeMap;
 
 public class TreeMapCountAppear {
     public static void main(String[] args) {
-        String st1= "AbcjsdsiHDKk";
-        String[] arrST= st1.split(" ");
-        System.out.println("when not converted: "+ st1);
-        System.out.println("after converting to uppercase: "+st1.toUpperCase());
-
+        String str= "AbcjssssdsiHDKk575";
+        String[] arr= str.split("");
+        System.out.println("when not converted: "+ str);
+        System.out.println("after converting to uppercase: "+str.toUpperCase());
         Map<String,Integer> map = new TreeMap<>();
-
-        for (String s:arrST) {
-            if(map.containsKey(s)){
-                Integer value = map.get(s);
+        int value=0;
+        for (String symbol:arr) {
+            if(map.containsKey(symbol)){
+                value = map.get(symbol);
                 value++;
-                map.replace(s,value);
+                map.replace(symbol,value);
             }else {
-                map.put(s,1);
+                map.put(symbol,1);
             }
         }
         System.out.println("Count the number of occurrences: "+map.toString().toUpperCase());

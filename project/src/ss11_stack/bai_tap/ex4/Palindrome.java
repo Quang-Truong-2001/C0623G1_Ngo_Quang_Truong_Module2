@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Palindrome {
     public static void main(String[] args) {
-        String str = "12348321";
+        String str = "123321";
         Queue<Character> queue = new LinkedList<>();
         Stack<Character> stack=new Stack<>();
         char[] charString=str.toCharArray();
