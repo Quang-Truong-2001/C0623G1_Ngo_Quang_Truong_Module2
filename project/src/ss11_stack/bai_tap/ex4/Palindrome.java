@@ -17,8 +17,6 @@ public class Palindrome {
             if(stack.pop()!=queue.poll()){
                 isPalindromw=false;
                 break;
-            } else {
-                isPalindromw=true;
             }
         }
         if(isPalindromw){
