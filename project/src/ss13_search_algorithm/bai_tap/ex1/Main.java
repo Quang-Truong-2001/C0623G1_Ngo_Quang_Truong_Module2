@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        String string="WelcomeWelcome";
+        System.out.println("Nhập chuỗi: ");
+        String string=scanner.nextLine();
         LinkedList<Character> max=new LinkedList<>();
         LinkedList<Character> list=new LinkedList<>();
         for(int i=0;i<string.length();i++){
