@@ -19,8 +19,6 @@ public class Gn {
                 count++;
             }
         }
-        int length=sNormal.length()+(count-2);
-        String[] array=new String[length];
         List<String> arra=new ArrayList<>();
         arra.add(arrNormal[0].toLowerCase());
         for(int i=1;i<sNormal.length(); i++){
@@ -31,9 +29,8 @@ public class Gn {
                 arra.add(arrNormal[i].toLowerCase());
             }
         }
-        for(int i=0; i<arra.size();i++){
-            str2+=arra.get(i)+"";
+        for(int i=0; i<arra.size();i++) {
+            str2 += arra.get(i) + "";
         }
-        return str2;
     }
 }
