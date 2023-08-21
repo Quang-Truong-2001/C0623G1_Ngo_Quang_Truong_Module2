@@ -3,24 +3,24 @@ package ss15_exception_debug.bai_tap;
 import java.util.Scanner;
 
 public class CheckTriangle {
+
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Nhập cạnh a: ");
-        int sideA=scanner.nextInt();
-        System.out.println("Nhập cạnh b: ");
-        int sideB=scanner.nextInt();
-        System.out.println("Nhập cạnh c: ");
-        int sideC=scanner.nextInt();
-        CheckTriangle checkTriangle=new CheckTriangle();
-        checkTriangle.check(sideA,sideA,sideC);
+        CheckInput checkInput=new CheckInput();
+        int sideA=0;
+        int sideB=0;
+        int sideC=0;
+        do{
+            try{
+                sideA=checkInput.checkInput("SideA");
+                sideB=checkInput.checkInput("SideB");
+                sideC=checkInput.checkInput("SideC");
+                Triangle triangle=new Triangle(sideA, sideB, sideC);
+            }catch (IllegalTriangleException e){
+                System.out.println(e.getMessage());
+            } catch (Exception e){
+                System.out.println("Ngoại lệ không xác định "+e.getMessage());
+            }
+        }while(sideA+sideB<=sideC||sideB+sideC<sideA||sideC+sideA<sideB||sideA<=0||sideB<=0||sideC<=0);
     }
-    private void check(int sideA, int sideB, int sideC){
-        try{
-            System.out.println("Cạnh a: "+sideA);
-            System.out.println("Cạnh b: "+sideB);
-            System.out.println("Cạnh c: "+sideC);
-        }catch (Exception e){
-            System.out.println("Xảy ra ngoại lệ");
-        }
-    }
+
 }
