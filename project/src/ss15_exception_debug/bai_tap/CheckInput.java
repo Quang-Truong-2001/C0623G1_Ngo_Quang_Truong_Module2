@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class CheckInput {
     public int checkInput(String nameSide) {
         Scanner scanner = new Scanner(System.in);
-        boolean valid = false;
+        boolean valid=false;
         int side = 0;
         do {
             try {
                 System.out.println("Nhập cạnh: " + nameSide);
                 side = Integer.parseInt(scanner.nextLine());
-                valid = true;
+                valid=true;
             } catch (NumberFormatException e) {
                 System.out.println("Nhập lại cạnh "+nameSide);
             }
-        } while (!valid);
+        } while (!valid||side<=0);
         return side;
     }
 }

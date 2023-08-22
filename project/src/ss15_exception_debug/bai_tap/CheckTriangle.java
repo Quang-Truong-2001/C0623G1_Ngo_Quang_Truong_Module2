@@ -20,7 +20,7 @@ public class CheckTriangle {
             } catch (Exception e){
                 System.out.println("Ngoại lệ không xác định "+e.getMessage());
             }
-        }while(sideA+sideB<=sideC||sideB+sideC<sideA||sideC+sideA<sideB||sideA<=0||sideB<=0||sideC<=0);
+        }while(sideA+sideB<=sideC||sideB+sideC<sideA||sideC+sideA<sideB);
     }
 
 }
