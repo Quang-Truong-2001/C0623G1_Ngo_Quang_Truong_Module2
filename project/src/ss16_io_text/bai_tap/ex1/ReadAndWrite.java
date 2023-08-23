@@ -19,13 +19,14 @@ public class ReadAndWrite {
                 result.add(str);
             }
             return result;
-        } catch (FileNotFoundException e) {
-            System.out.println("File không tồn tại");
-            return result;
         } catch (IOException e) {
             e.printStackTrace();
             return result;
-        } finally {
+        } catch (Exception e){
+            e.printStackTrace();
+            return result;
+        }
+        finally {
             try {
                 if (bufferedReader != null) {
                     bufferedReader.close();
@@ -51,10 +52,10 @@ public class ReadAndWrite {
                 bufferedWriter.write(d);
                 bufferedWriter.newLine();
             }
-        } catch (FileNotFoundException e) {
-            System.out.println("File không tồn tại");
+        }catch (IOException e) {
+            System.out.println(e.getMessage());
         } catch (Exception e) {
-            System.out.println("Nội dung có lỗi");
+            System.out.println(e.getMessage());
         } finally {
             try {
                 if (bufferedWriter != null) {
@@ -64,8 +65,15 @@ public class ReadAndWrite {
                     fileWriter.close();
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         }
+    }
+    public static boolean checkExistFile(String pathName){
+        File file=new File(pathName);
+        if(!file.exists()){
+            return false;
+        }
+        return true;
     }
 }
