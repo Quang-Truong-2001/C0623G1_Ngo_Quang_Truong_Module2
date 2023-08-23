@@ -13,6 +13,7 @@ public class CheckInput {
                 side = Integer.parseInt(scanner.nextLine());
                 valid=true;
             } catch (NumberFormatException e) {
+                System.out.println("Độ dài cạnh phải là một số dương");
                 System.out.println("Nhập lại cạnh "+nameSide);
             }
         } while (!valid||side<=0);
