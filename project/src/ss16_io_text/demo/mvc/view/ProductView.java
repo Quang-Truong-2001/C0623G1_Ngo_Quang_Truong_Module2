@@ -3,6 +3,7 @@ package ss16_io_text.demo.mvc.view;
 import ss16_io_text.demo.mvc.controller.ProductController;
 import ss16_io_text.demo.mvc.model.Product;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -11,7 +12,7 @@ public class ProductView {
     private final ProductController controller=new ProductController();
 
 
-    public void render(){
+    public void render() throws IOException {
         int option=0;
         do{
             showMenu();

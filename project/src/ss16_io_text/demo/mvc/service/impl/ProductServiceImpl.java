@@ -5,6 +5,7 @@ import ss16_io_text.demo.mvc.repository.IProductRepository;
 import ss16_io_text.demo.mvc.repository.impl.ProductRepositoryImpl;
 import ss16_io_text.demo.mvc.service.IProductService;
 
+import java.io.IOException;
 import java.util.List;
 
 public class ProductServiceImpl implements IProductService {
@@ -12,17 +13,17 @@ public class ProductServiceImpl implements IProductService {
 
 
     @Override
-    public void createProduct(Product product) {
+    public void createProduct(Product product) throws IOException {
         this.repository.createProduct(product);
     }
 
     @Override
-    public void updateProduct(Product product) {
+    public void updateProduct(Product product) throws IOException {
         this.repository.updateProduct(product);
     }
 
     @Override
-    public void deleteProduct(int id) {
+    public void deleteProduct(int id) throws IOException {
         this.repository.deleteProduct(id);
     }
 
