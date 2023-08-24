@@ -27,7 +27,5 @@ public class Main {
             }
         } while (!checkFileExist);
         FileUtils.writeFileBinary(targetFile,FileUtils.readFileBinary(sourceFile));
-        int count=CountByte.countByte(targetFile);
-        System.out.println("Số byte trong tệp là "+ count );
     }
 }
