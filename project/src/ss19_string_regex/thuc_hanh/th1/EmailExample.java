@@ -1,4 +1,4 @@
-package ss19_string_regex.thuc_hanh;
+package ss19_string_regex.thuc_hanh.th1;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

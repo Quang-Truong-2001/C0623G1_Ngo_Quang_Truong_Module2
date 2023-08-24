@@ -1,6 +1,6 @@
 package ss17_io_binary_file_serialization.bai_tap.ex1.repository.impl;
 
-import ss17_io_binary_file_serialization.bai_tap.ex1.Utils.FileUtils;
+import ss17_io_binary_file_serialization.bai_tap.ex1.utils.FileUtils;
 import ss17_io_binary_file_serialization.bai_tap.ex1.model.Product;
 import ss17_io_binary_file_serialization.bai_tap.ex1.repository.IProductRepository;
 

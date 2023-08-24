@@ -1,4 +1,4 @@
-package ss17_io_binary_file_serialization.bai_tap.ex1.Utils;
+package ss17_io_binary_file_serialization.bai_tap.ex1.utils;
 
 import ss17_io_binary_file_serialization.bai_tap.ex1.model.Product;
 
