@@ -26,5 +26,8 @@ public class Main {
         String text3="12/12/aaa";
         Pattern pattern=Pattern.compile("\\d{1,2}[-|/]\\d{1,2}[-|/]\\d{4}");
         System.out.println("\nChuỗi "+text2+" có định dạng ngày tháng: "+pattern.matcher(text2).matches());
+
+        Pattern pattern1=Pattern.compile("");
+        pattern1.matcher(text3).matches();
     }
 }
