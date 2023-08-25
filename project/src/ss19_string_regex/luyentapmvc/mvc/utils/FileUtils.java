@@ -1,19 +1,19 @@
-package ss16_io_text.demo.mvc.utils;
+package ss19_string_regex.luyentapmvc.mvc.utils;
 
-import ss13_search_algorithm.demo.BinarySearchDemo;
+import ss19_string_regex.luyentapmvc.mvc.model.Product;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FileUtils {
-    public static List<String> readFile(String namePath){
-        File file=null;
+    public static List<String> readFile(String pathName){
+        File file;
         FileReader fileReader=null;
         BufferedReader bufferedReader=null;
         List<String> result=new ArrayList<>();
         try {
-            file=new File(namePath);
+            file=new File(pathName);
             fileReader=new FileReader(file);
             bufferedReader=new BufferedReader(fileReader);
 
@@ -22,9 +22,8 @@ public class FileUtils {
                 result.add(str);
             }
             return result;
-        }  catch (IOException e) {
-            e.printStackTrace();
-            return result;
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         } finally {
             try {
                 if(bufferedReader!=null){
@@ -34,24 +33,25 @@ public class FileUtils {
                     fileReader.close();
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         }
+        return result;
     }
-    public static void writerFile(String namePath, List<String> data){
-        File file=null;
+    public static void writeFile(String pathName, List<String> data){
+        File file;
         FileWriter fileWriter=null;
         BufferedWriter bufferedWriter=null;
-        try {
-            file=new File(namePath);
+        try{
+            file=new File(pathName);
             fileWriter=new FileWriter(file);
             bufferedWriter=new BufferedWriter(fileWriter);
-            for(String d:data){
+            for(String d: data){
                 bufferedWriter.write(d);
                 bufferedWriter.newLine();
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         } finally {
             try {
                 if(bufferedWriter!=null){
@@ -61,7 +61,7 @@ public class FileUtils {
                     fileWriter.close();
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         }
     }

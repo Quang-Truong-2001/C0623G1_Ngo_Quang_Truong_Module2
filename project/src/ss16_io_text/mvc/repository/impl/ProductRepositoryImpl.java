@@ -26,7 +26,7 @@ public class ProductRepositoryImpl implements IProductRepository {
             if(p.getId()==product.getId()){
                 p.setName(product.getName());
                 p.setPrice(product.getPrice());
-                return;
+                break;
             }
         }
         this.writeFileWithByteStream(FILE_PATH_BINARY,products);
@@ -38,7 +38,7 @@ public class ProductRepositoryImpl implements IProductRepository {
         for(Product p:products){
             if(p.getId()==id){
                 products.remove(p);
-                return;
+                break;
             }
         }
         this.writeFileWithByteStream(FILE_PATH_BINARY,products);

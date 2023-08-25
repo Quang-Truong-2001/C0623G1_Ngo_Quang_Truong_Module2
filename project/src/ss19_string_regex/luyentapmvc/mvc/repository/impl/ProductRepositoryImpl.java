@@ -1,15 +1,15 @@
-package ss16_io_text.demo.mvc.repository.impl;
+package ss19_string_regex.luyentapmvc.mvc.repository.impl;
 
-import ss16_io_text.demo.mvc.model.Product;
-import ss16_io_text.demo.mvc.repository.IProductRepository;
-import ss16_io_text.demo.mvc.utils.FileUtils;
+import ss19_string_regex.luyentapmvc.mvc.model.Product;
+import ss19_string_regex.luyentapmvc.mvc.repository.IProductRepository;
+import ss19_string_regex.luyentapmvc.mvc.utils.FileUtils;
 
 import java.util.*;
 
 public class ProductRepositoryImpl implements IProductRepository {
 
-    public static final String COMMAN = ",";
-    private static final String FILE_PATH="E:\\C0623G1_Ngo_Quang_Truong_Module2\\project\\src\\ss16_io_text\\demo\\mvc\\data\\data.csv";
+    public static final String COMMA = ",";
+    private final String FILE_PATH_PRODUCT="E:\\C0623G1_Ngo_Quang_Truong_Module2\\project\\src\\ss19_string_regex\\luyentapmvc\\mvc\\data\\dataluyentap.csv";
 
     //    private final List<Product> products=new ArrayList<>();
     @Override
@@ -17,7 +17,7 @@ public class ProductRepositoryImpl implements IProductRepository {
         List<Product> products=this.getProduct();
         product.setId(products.size()+1);
         products.add(product);
-        FileUtils.writerFile(FILE_PATH,this.convertToString(products));
+        FileUtils.writeFile(FILE_PATH_PRODUCT,convertProductToString(products));
     }
 
     @Override
@@ -30,7 +30,7 @@ public class ProductRepositoryImpl implements IProductRepository {
                 break;
             }
         }
-        FileUtils.writerFile(FILE_PATH,this.convertToString(products));
+        FileUtils.writeFile(FILE_PATH_PRODUCT,convertProductToString(products));
     }
 
     @Override
@@ -42,13 +42,13 @@ public class ProductRepositoryImpl implements IProductRepository {
                 break;
             }
         }
-        FileUtils.writerFile(FILE_PATH,this.convertToString(products));
+        FileUtils.writeFile(FILE_PATH_PRODUCT,convertProductToString(products));
     }
 
     @Override
     public List<Product> searchProductByName(String name) {
         List<Product> products=this.getProduct();
-        List<Product> search=new LinkedList<>();
+        List<Product> search=new ArrayList<>();
         for(Product p:products){
             if(p.getName()==name){
                 search.add(p);
@@ -59,8 +59,8 @@ public class ProductRepositoryImpl implements IProductRepository {
 
     @Override
     public List<Product> getProduct() {
-        List<String> products= FileUtils.readFile(FILE_PATH);
-        return this.convertToProduct(products);
+        List<String> productString= FileUtils.readFile(FILE_PATH_PRODUCT);
+        return convertStringToProduct(productString);
     }
 
     @Override
@@ -90,20 +90,19 @@ public class ProductRepositoryImpl implements IProductRepository {
         }
         return products;
     }
-    private List<String> convertToString(List<Product> products){
-        List<String> productString=new ArrayList<>();
-        for(Product p:products){
-            productString.add(p.getId()+ COMMAN+p.getName()+COMMAN+p.getPrice());
-        }
-        return productString;
-    }
-    private List<Product> convertToProduct(List<String> data) {
+    public static List<Product> convertStringToProduct(List<String> productString){
         List<Product> products=new ArrayList<>();
-        for(String p:data){
-            String[] els=p.split(COMMAN);
+        for(String p:productString){
+            String[] els=p.split(COMMA);
             products.add(new Product(Integer.parseInt(els[0]),els[1],Float.parseFloat(els[2])));
         }
         return products;
     }
-
+    public static List<String> convertProductToString(List<Product> products){
+        List<String> productString=new ArrayList<>();
+        for(Product p:products){
+            productString.add(p.getId()+COMMA+p.getName()+COMMA+p.getPrice());
+        }
+        return productString;
+    }
 }
