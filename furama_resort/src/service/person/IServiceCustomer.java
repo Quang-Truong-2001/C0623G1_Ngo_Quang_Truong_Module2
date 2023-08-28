@@ -9,5 +9,5 @@ import java.util.List;
 public interface IServiceCustomer extends IService<Customer> {
     void updateCustomer(Customer customer);
     void deleteCustomer(String id);
-    List<Employee> searchByNameCustomer(String nameCustomer);
+    List<Customer> searchByNameCustomer(String nameCustomer);
 }

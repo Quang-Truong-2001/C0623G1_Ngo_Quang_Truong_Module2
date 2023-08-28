@@ -28,7 +28,7 @@ public class FuramaView {
                 default:
                     System.out.println("Vui lòng nhập lại");
             }
-        }while(option<1||option>6);
+        }while(option>0||option<7);
     }
     private static void showMenu(){
         System.out.println("========MENU=======");

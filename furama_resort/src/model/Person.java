@@ -5,14 +5,14 @@ public abstract class Person {
     private String name;
     private String birthDay;
     private String Gender;
-    private int identityCardNumber;
-    private int phoneNumber;
+    private String identityCardNumber;
+    private String phoneNumber;
     private String email;
 
     public Person() {
     }
 
-    public Person(String id, String name, String birthDay, String gender, int identityCardNumber, int phoneNumber, String email) {
+    public Person(String id, String name, String birthDay, String gender, String identityCardNumber, String phoneNumber, String email) {
         this.id = id;
         this.name = name;
         this.birthDay = birthDay;
@@ -54,19 +54,19 @@ public abstract class Person {
         Gender = gender;
     }
 
-    public int getIdentityCardNumber() {
+    public String getIdentityCardNumber() {
         return identityCardNumber;
     }
 
-    public void setIdentityCardNumber(int identityCardNumber) {
+    public void setIdentityCardNumber(String identityCardNumber) {
         this.identityCardNumber = identityCardNumber;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

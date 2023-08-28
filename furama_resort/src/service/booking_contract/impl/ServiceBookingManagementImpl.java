@@ -7,6 +7,15 @@ import service.booking_contract.IServiceContract;
 
 import java.util.List;
 
-public class ServiceBookingManagementImpl  {
+public class ServiceBookingManagementImpl implements IServiceBooking  {
 
+    @Override
+    public List<Booking> getList() {
+        return null;
+    }
+
+    @Override
+    public void addNew(Booking booking) {
+
+    }
 }

@@ -3,16 +3,16 @@ package model;
 public class Employee extends Person{
     private String qualifications;
     private String position;
-    private int wage;
+    private String wage;
 
     public Employee() {
     }
 
-    public Employee(String id, String name, String birthDay, String gender, int identityCardNumber, int phoneNumber, String email, String qualifications, String position, int wage) {
+    public Employee(String id, String name, String birthDay, String gender, String identityCardNumber, String phoneNumber, String email, String qualifications, String position, String wage) {
         super(id, name, birthDay, gender, identityCardNumber, phoneNumber, email);
         this.qualifications = qualifications;
         this.position = position;
-        this.wage = wage;
+        this.wage=wage;
     }
 
     public String getQualifications() {
@@ -31,11 +31,11 @@ public class Employee extends Person{
         this.position = position;
     }
 
-    public int getWage() {
+    public String getWage() {
         return wage;
     }
 
-    public void setWage(int wage) {
+    public void setWage(String wage) {
         this.wage = wage;
     }
 
