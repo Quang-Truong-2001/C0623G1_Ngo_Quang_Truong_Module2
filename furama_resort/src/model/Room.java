@@ -6,8 +6,8 @@ public class Room extends Facility{
     public Room() {
     }
 
-    public Room(String idService, String nameService, double areaService, double priceService, int numbersOfPeople, String typeServiceYear, String typeServiceMonth, String typeServiceDay, String typeServiceHour, String voucher) {
-        super(idService, nameService, areaService, priceService, numbersOfPeople, typeServiceYear, typeServiceMonth, typeServiceDay, typeServiceHour);
+    public Room(String idService, String nameService, double areaService, double priceService, int numbersOfPeople, String typeService, String voucher) {
+        super(idService, nameService, areaService, priceService, numbersOfPeople, typeService);
         this.voucher = voucher;
     }
 

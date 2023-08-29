@@ -6,25 +6,19 @@ public abstract class Facility {
     private double AreaService;
     private double priceService;
     private int numbersOfPeople;
-    private String typeServiceYear;
-    private String typeServiceMonth;
-    private String typeServiceDay;
-    private String typeServiceHour;
+    private String typeService;
 
 
     public Facility() {
     }
 
-    public Facility(String idService, String nameService, double areaService, double priceService, int numbersOfPeople, String typeServiceYear, String typeServiceMonth, String typeServiceDay, String typeServiceHour) {
+    public Facility(String idService, String nameService, double areaService, double priceService, int numbersOfPeople, String typeService) {
         this.idService = idService;
         this.nameService = nameService;
-        this.AreaService = areaService;
+        AreaService = areaService;
         this.priceService = priceService;
         this.numbersOfPeople = numbersOfPeople;
-        this.typeServiceYear = typeServiceYear;
-        this.typeServiceMonth = typeServiceMonth;
-        this.typeServiceDay = typeServiceDay;
-        this.typeServiceHour = typeServiceHour;
+        this.typeService = typeService;
     }
 
     public String getIdService() {
@@ -67,36 +61,12 @@ public abstract class Facility {
         this.numbersOfPeople = numbersOfPeople;
     }
 
-    public String getTypeServiceYear() {
-        return typeServiceYear;
+    public String getTypeService() {
+        return typeService;
     }
 
-    public void setTypeServiceYear(String typeServiceYear) {
-        this.typeServiceYear = typeServiceYear;
-    }
-
-    public String getTypeServiceMonth() {
-        return typeServiceMonth;
-    }
-
-    public void setTypeServiceMonth(String typeServiceMonth) {
-        this.typeServiceMonth = typeServiceMonth;
-    }
-
-    public String getTypeServiceDay() {
-        return typeServiceDay;
-    }
-
-    public void setTypeServiceDay(String typeServiceDay) {
-        this.typeServiceDay = typeServiceDay;
-    }
-
-    public String getTypeServiceHour() {
-        return typeServiceHour;
-    }
-
-    public void setTypeServiceHour(String typeServiceHour) {
-        this.typeServiceHour = typeServiceHour;
+    public void setTypeService(String typeService) {
+        this.typeService = typeService;
     }
 
     @Override
@@ -106,9 +76,6 @@ public abstract class Facility {
                 "AreaService: " + AreaService + "\t" +
                 "priceService: " + priceService + "\t" +
                 "numbersOfPeople: " + numbersOfPeople + "\t" +
-                "typeServiceYear: " + typeServiceYear + "\t" +
-                "typeServiceMonth: " + typeServiceMonth + "\t" +
-                "typeServiceDay: " + typeServiceDay + "\t" +
-                "typeServiceHour: " + typeServiceHour + "\t";
+                "typeService: "+ typeService;
     }
 }

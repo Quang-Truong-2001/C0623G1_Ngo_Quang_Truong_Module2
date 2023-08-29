@@ -65,7 +65,6 @@ public class EmployeeRepositoryImpl implements IEmployeeRepository {
     @Override
     public void addNew(Employee employee) {
         List<Employee> employees=this.getList();
-        employee.setId(String.valueOf(employees.size()+1));
         employees.add(employee);
         FileUtils.writeFile(EMPLOYEE_DATA_PATH,EmployeeCovert.convertEmployeeToString(employees));
     }

@@ -21,7 +21,6 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
     @Override
     public void addNew(Customer customer) {
         List<Customer> customers=this.getList();
-        customer.setId(String.valueOf(customers.size()+1));
         customers.add(customer);
         FileUtils.writeFile(CUSTOMER_PATH_NAME,CustomerConvert.convertCustomerToString(customers));
     }
@@ -69,4 +68,5 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
         }
         return result;
     }
+
 }

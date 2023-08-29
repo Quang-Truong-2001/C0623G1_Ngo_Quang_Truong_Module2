@@ -1,13 +1,10 @@
-package service.facility;
+package controller.facility;
 
 import model.Facility;
-import service.IService;
 
-
-import java.util.List;
 import java.util.Map;
 
-public interface IServiceFacility {
+public interface IFacilityController {
     Map<Facility,Integer> displayListFacilityMaintenance();
     void addNew(Facility newFacility,int times);
     Map<Facility,Integer> getList();

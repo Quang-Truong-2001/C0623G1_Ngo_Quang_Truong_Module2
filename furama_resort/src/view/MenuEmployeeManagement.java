@@ -1,5 +1,6 @@
 package view;
 
+import Utils.Check;
 import Utils.Regex;
 import controller.person.IControllerEmployee;
 import controller.person.impl.ControllerEmployeeImpl;
@@ -11,6 +12,17 @@ import java.util.Scanner;
 public class MenuEmployeeManagement {
     private static final IControllerEmployee iControllerEmployee=new ControllerEmployeeImpl();
     private static final MenuEmployeeManagement menuEmployeeManagement=new MenuEmployeeManagement();
+    private static boolean valid=false;
+    private static String idEmployee;
+    private static String name;
+    private static String birthDay;
+    private static String wage;
+    private static String phoneNumber;
+    private static String identityCardNumber;
+    private static String gender;
+    private static String email;
+    private static String qualifications;
+    private static String position;
 
     private static final Scanner scanner=new Scanner(System.in);
     private static void displayMenuEmployeeManagement(){
@@ -30,6 +42,7 @@ public class MenuEmployeeManagement {
             option=FunctionCheckOption.checkOption();
             switch (option) {
                 case 1:
+                    System.out.println("Danh sách nhân viên");
                     List<Employee> list=iControllerEmployee.getList();
                     for(Employee l:list){
                         System.out.println(l);
@@ -65,37 +78,89 @@ public class MenuEmployeeManagement {
     }
     private Employee creatAndUpdateEmployee(){
         Employee employee=new Employee();
-        boolean valid=false;
-        String name;
-        String birthDay;
+
+        employee.setId(enterIdEmployee());
+        employee.setName(enterName());
+        employee.setBirthDay(enterBirthDay());
+        employee.setGender(enterGender());
+        employee.setIdentityCardNumber(enterIdentityCardNumber());
+        employee.setPhoneNumber(enterPhoneNumber());
+        employee.setEmail(enterEmail());
+        employee.setQualifications(enterQualification());
+        employee.setPosition(enterPosition());
+        employee.setWage(enterWage());
+
+        return employee;
+    }
+    private static String enterIdEmployee(){
+        do{
+            System.out.println("Nhập mã nhân viên: ");
+            idEmployee=scanner.nextLine();
+            valid=Regex.checkIdEmployee(idEmployee);
+            valid=!(Check.checkExistEmployee(idEmployee, iControllerEmployee.getList()));
+            if(!valid){
+                System.out.println("Mã nhân viên đã tồn tại, vui lòng nhập lại");
+            }
+        }while (!valid);
+        return idEmployee;
+    }
+    private static String enterName(){
         do{
             System.out.println("Nhập tên nhân viên: ");
             name=scanner.nextLine();
-            valid=Regex.checkIdEmployee(name);
+            valid= Check.checkName(name);
         }while (!valid);
-        employee.setName(name);
-
-//        valid=false;
-//        do{
-//            System.out.println("Nhập ngày sinh: ");
-//            employee.setBirthDay(scanner.nextLine());
-//            valid.
-//        }while (!valid)
-//
+        return name;
+    }
+    private static String enterBirthDay(){
+        do{
+            System.out.println("Nhập ngày sinh: ");
+            birthDay=scanner.nextLine();
+            valid=Regex.checkBirthDay(birthDay);
+        }while (!valid);
+        return birthDay;
+    }
+    private static String enterGender(){
         System.out.println("Nhập giới tính: ");
-        employee.setGender(scanner.nextLine());
-        System.out.println("Nhập số căn cước công dân: ");
-        employee.setIdentityCardNumber(scanner.nextLine());
-        System.out.println("Nhập số điện thoại: ");
-        employee.setPhoneNumber(scanner.nextLine());
+        gender=scanner.nextLine();
+        return gender;
+    }
+    private static String enterIdentityCardNumber(){
+        do{
+            System.out.println("Nhập số căn cước công dân: ");
+            identityCardNumber =scanner.nextLine();
+            valid=Regex.checkIdentityCardNumber(identityCardNumber);
+        }while (!valid);
+        return identityCardNumber;
+    }
+    private static String enterPhoneNumber(){
+        do{
+            System.out.println("Nhập số điện thoại: ");
+            phoneNumber=scanner.nextLine();
+            valid=Regex.checkPhoneNumber(phoneNumber);
+        }while (!valid);
+        return phoneNumber;
+    }
+    private static String enterEmail(){
         System.out.println("Nhập email: ");
-        employee.setEmail(scanner.nextLine());
+        email=scanner.nextLine();
+        return email;
+    }
+    private static String enterQualification(){
         System.out.println("Nhập bằng cấp: ");
-        employee.setQualifications(scanner.nextLine());
+        qualifications=scanner.nextLine();
+        return qualifications;
+    }
+    private static String enterPosition(){
         System.out.println("Nhập vị trí: ");
-        employee.setPosition(scanner.nextLine());
-        System.out.println("Nhập lương: ");
-        employee.setWage(scanner.nextLine());
-        return employee;
+        position=scanner.nextLine();
+        return position;
+    }
+    private static String enterWage(){
+        do{
+            System.out.println("Nhập lương: ");
+            wage=scanner.nextLine();
+        }while (Double.parseDouble(wage)<=0);
+        return wage;
     }
 }

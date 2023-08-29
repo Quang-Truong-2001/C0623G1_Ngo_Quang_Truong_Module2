@@ -2,13 +2,13 @@ package model;
 
 public class House extends Facility{
     private String roomStandard;
-    private String numbersOfFloor;
+    private int numbersOfFloor;
 
     public House() {
     }
 
-    public House(String idService, String nameService, double areaService, double priceService, int numbersOfPeople, String typeServiceYear, String typeServiceMonth, String typeServiceDay, String typeServiceHour, String roomStandard, String numbersOfFloor) {
-        super(idService, nameService, areaService, priceService, numbersOfPeople, typeServiceYear, typeServiceMonth, typeServiceDay, typeServiceHour);
+    public House(String idService, String nameService, double areaService, double priceService, int numbersOfPeople, String typeService, String roomStandard, int numbersOfFloor) {
+        super(idService, nameService, areaService, priceService, numbersOfPeople, typeService);
         this.roomStandard = roomStandard;
         this.numbersOfFloor = numbersOfFloor;
     }
@@ -21,11 +21,11 @@ public class House extends Facility{
         this.roomStandard = roomStandard;
     }
 
-    public String getNumbersOfFloor() {
+    public int getNumbersOfFloor() {
         return numbersOfFloor;
     }
 
-    public void setNumbersOfFloor(String numbersOfFloor) {
+    public void setNumbersOfFloor(int numbersOfFloor) {
         this.numbersOfFloor = numbersOfFloor;
     }
 
