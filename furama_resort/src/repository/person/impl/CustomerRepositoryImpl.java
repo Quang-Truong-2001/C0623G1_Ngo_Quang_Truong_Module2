@@ -63,7 +63,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
         List<Customer> result=new ArrayList<>();
         for(Customer c:customers){
             if(c.getName().contains(nameCustomer)){
-                result.remove(c);
+                result.add(c);
             }
         }
         return result;

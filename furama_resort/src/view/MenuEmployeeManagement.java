@@ -3,6 +3,7 @@ package view;
 import Utils.Check;
 import Utils.Regex;
 import controller.person.ControllerEmployee;
+import model.Customer;
 import model.Employee;
 
 import java.util.List;
@@ -56,7 +57,14 @@ public class MenuEmployeeManagement {
                 case 5:
                     System.out.println("Nhập tên nhân viên cần tìm: ");
                     String name=scanner.nextLine();
-                    System.out.println(iControllerEmployee.searchByNameEmployee(name));
+                    List<Employee> listSearch=iControllerEmployee.searchByNameEmployee(name);
+                    if(listSearch.isEmpty()){
+                        System.out.println("Tên khách hàng không có trong danh sách: ");
+                    } else {
+                        for(Employee l:listSearch){
+                            System.out.println(l);
+                        }
+                    }
                     break;
                 case 6:
                     FuramaView.render();

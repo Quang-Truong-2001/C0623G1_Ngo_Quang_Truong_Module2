@@ -15,14 +15,6 @@ public class MenuCustomerManagement {
     private static final MenuCustomerManagement menuCustomerManagement = new MenuCustomerManagement();
     private static boolean valid = false;
 
-
-
-
-
-
-
-
-
     private static void displayMenuCustomerManagement() {
         System.out.println("===Menu Customer Management======");
         System.out.println("1. Display list Customer");
@@ -64,7 +56,14 @@ public class MenuCustomerManagement {
                 case 5:
                     System.out.println("Nhập tên khách hàng cần tìm: ");
                     String name = scanner.nextLine();
-                    iControlCustomer.searchByNameCustomer(name);
+                    List<Customer> listSearch=iControlCustomer.searchByNameCustomer(name);
+                    if(listSearch.isEmpty()){
+                        System.out.println("Tên khách hàng không có trong danh sách: ");
+                    }else {
+                        for(Customer l:listSearch){
+                            System.out.println(l);
+                        }
+                    }
                     break;
                 case 6:
                     FuramaView.render();
@@ -149,11 +148,11 @@ public class MenuCustomerManagement {
         return gender;
     }
     private static String enterIdentityCardNumber(){
-        String identityCardNumber;
+        String identityCardNumber = null;
         do {
-            System.out.println("Nhập số căn cước công dân: ");
-            identityCardNumber = scanner.nextLine();
             try {
+                System.out.println("Nhập số căn cước công dân: ");
+                identityCardNumber = scanner.nextLine();
                 if (Regex.checkIdentityCardNumber(identityCardNumber)) {
                     valid = true;
                 }
