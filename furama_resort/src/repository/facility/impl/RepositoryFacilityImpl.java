@@ -6,6 +6,7 @@ import model.Room;
 import model.Villa;
 import repository.facility.IRepositoryFacility;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,8 +21,14 @@ public class RepositoryFacilityImpl implements IRepositoryFacility {
     }
 
     @Override
-    public Map<Facility, Integer> displayListFacilityMaintenance() {
-        return facility;
+    public List<Facility> displayListFacilityMaintenance() {
+        List<Facility> list=new ArrayList<>();
+        for(Map.Entry<Facility, Integer> entry: facility.entrySet()){
+            if(entry.getValue()>5){
+                list.add(entry.getKey());
+            }
+        }
+        return list;
     }
 
     @Override

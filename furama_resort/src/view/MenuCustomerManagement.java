@@ -2,8 +2,7 @@ package view;
 
 import Utils.Check;
 import Utils.Regex;
-import controller.person.IControllerCustomer;
-import controller.person.impl.ControllerCustomerImpl;
+import controller.person.ControllerCustomer;
 import model.Customer;
 
 import java.time.format.DateTimeParseException;
@@ -12,18 +11,17 @@ import java.util.Scanner;
 
 public class MenuCustomerManagement {
     private static final Scanner scanner = new Scanner(System.in);
-    private static final IControllerCustomer iControlCustomer = new ControllerCustomerImpl();
+    private static final ControllerCustomer iControlCustomer = new ControllerCustomer();
     private static final MenuCustomerManagement menuCustomerManagement = new MenuCustomerManagement();
     private static boolean valid = false;
-    private static String idCustomer;
-    private static String nameCustomer;
-    private static String birthDay;
-    private static String identityCardNumber;
-    private static String phoneNumer;
-    private static String email;
-    private static String type;
-    private static String address;
-    private static String gender;
+
+
+
+
+
+
+
+
 
     private static void displayMenuCustomerManagement() {
         System.out.println("===Menu Customer Management======");
@@ -35,7 +33,7 @@ public class MenuCustomerManagement {
         System.out.println("6. Return main menu");
     }
 
-    public static void renderMenuEmployeeManagement() {
+    public static void renderMenuCustomerManagement() {
         int option = 0;
         do {
             displayMenuCustomerManagement();
@@ -49,6 +47,7 @@ public class MenuCustomerManagement {
                     break;
                 case 2:
                     iControlCustomer.addNew(menuCustomerManagement.creatAndUpdateCustomer());
+                    System.out.println("Thêm khách hàng thành công");
                     break;
                 case 3:
                     System.out.println("Nhập id khách hàng cần sửa: ");
@@ -84,31 +83,44 @@ public class MenuCustomerManagement {
         customer.setPhoneNumber(enterPhoneNumber());
         customer.setEmail(enterEmail());
         customer.setTypeCustomer(enterType());
-        customer.setAddress(enterType());
+        customer.setAddress(enterAddress());
         return customer;
     }
 
     private static String enterId() {
+        String idCustomer = null;
         do {
-            System.out.println("Nhập mã khách hàng");
-            idCustomer = scanner.nextLine();
-            valid = Regex.checkIdCustomer(idCustomer);
-            valid = !(Check.checkExistCustomer(idCustomer, iControlCustomer.getList()));
-            if (!valid) {
-                System.out.println("Mã khách hàng đã tồn tại, vui lòng nhập lại");
+            try {
+                System.out.println("Nhập mã khách hàng");
+                idCustomer = scanner.nextLine();
+                valid = Regex.checkIdCustomer(idCustomer);
+                valid = !(Check.checkExistCustomer(idCustomer, iControlCustomer.getList()));
+                if (!valid) {
+                    System.out.println("Mã khách hàng đã tồn tại, vui lòng nhập lại");
+                }
+            } catch (Exception e){
+                System.out.println("Thông tin sai. Vui lòng nhập lại: ");
+                valid=false;
             }
         } while (!valid);
         return idCustomer;
     }
     private static String enterName(){
+        String nameCustomer = null;
         do {
-            System.out.println("Nhập tên khách hàng: ");
-            nameCustomer = scanner.nextLine();
-            valid = Check.checkName(nameCustomer);
+            try {
+                System.out.println("Nhập tên khách hàng: ");
+                nameCustomer = scanner.nextLine();
+                valid = Check.checkName(nameCustomer);
+            } catch (Exception e){
+                System.out.println("Thông tin sai. Vui lòng nhập lại: ");
+                valid=false;
+            }
         } while (!valid);
         return nameCustomer;
     }
     private static String enterBirthDay(){
+        String birthDay;
         do {
             System.out.println("Nhập ngày sinh: ");
             birthDay = scanner.nextLine();
@@ -123,16 +135,21 @@ public class MenuCustomerManagement {
         } while (!valid);
         if (!Check.validateAge(birthDay)){
             System.out.println("Khách hàng không đủ tuổi");
-            renderMenuEmployeeManagement();
+            renderMenuCustomerManagement();
         }
         return birthDay;
     }
     private static String enterGender(){
-        System.out.println("Nhập giới tính: ");
-        gender=scanner.nextLine();
+        String gender;
+        do{
+            System.out.println("Nhập giới tính: ");
+            gender=scanner.nextLine();
+            valid=Check.checkGender(gender);
+        } while(!valid);
         return gender;
     }
     private static String enterIdentityCardNumber(){
+        String identityCardNumber;
         do {
             System.out.println("Nhập số căn cước công dân: ");
             identityCardNumber = scanner.nextLine();
@@ -147,24 +164,36 @@ public class MenuCustomerManagement {
         return identityCardNumber;
     }
     private static String enterPhoneNumber(){
+        String phoneNumber = null;
         do {
-            System.out.println("Nhập số điện thoại: ");
-            phoneNumer = scanner.nextLine();
-            valid = Regex.checkPhoneNumber(phoneNumer);
+            try {
+                System.out.println("Nhập số điện thoại: ");
+                phoneNumber = scanner.nextLine();
+                valid = Regex.checkPhoneNumber(phoneNumber);
+            } catch (Exception e){
+                System.out.println("Thông tin sai. Vui lòng nhập lại: ");
+                valid=false;
+            }
         } while (!valid);
-        return phoneNumer;
+        return phoneNumber;
     }
     private static String enterEmail(){
-        System.out.println("Nhập email: ");
-        email=scanner.nextLine();
+        String email;
+        do{
+            System.out.println("Nhập email: ");
+            email=scanner.nextLine();
+            valid=Regex.checkEmail(email);
+        }while(!valid);
         return email;
     }
     private static String enterType(){
+        String type;
         System.out.println("Nhập loại khách hàng: ");
         type=scanner.nextLine();
         return type;
     }
     private static String enterAddress(){
+        String address;
         System.out.println("Nhập địa chỉ: ");
         address=scanner.nextLine();
         return address;

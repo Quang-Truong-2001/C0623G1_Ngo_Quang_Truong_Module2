@@ -1,30 +1,30 @@
-package controller.facility.impl;
+package controller.facility;
 
-import controller.facility.IFacilityController;
 import model.Facility;
 import service.facility.IServiceFacility;
 import service.facility.impl.ServiceFacilityImpl;
 
+import java.util.List;
 import java.util.Map;
 
-public class FacilityControllerImpl implements IFacilityController {
+public class FacilityController {
     private static final IServiceFacility serviceFacility=new ServiceFacilityImpl();
-    @Override
-    public Map<Facility, Integer> displayListFacilityMaintenance() {
+
+    public List<Facility> displayListFacilityMaintenance() {
         return serviceFacility.displayListFacilityMaintenance();
     }
 
-    @Override
+
     public void addNew(Facility newFacility, int times) {
         serviceFacility.addNew(newFacility, times);
     }
 
-    @Override
+
     public Map<Facility, Integer> getList() {
         return serviceFacility.getList();
     }
 
-    @Override
+
     public void deleteFacility(String id) {
         serviceFacility.deleteFacility(id);
     }

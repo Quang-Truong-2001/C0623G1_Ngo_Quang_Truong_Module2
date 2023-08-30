@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface IRepositoryFacility {
-    Map<Facility,Integer> displayListFacilityMaintenance();
+    List<Facility> displayListFacilityMaintenance();
     void addNew(Facility newFacility,int times);
     Map<Facility,Integer> getList();
     void deleteFacility(String id);

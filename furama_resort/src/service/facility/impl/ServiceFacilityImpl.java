@@ -13,7 +13,7 @@ public class ServiceFacilityImpl implements IServiceFacility {
     private static final IRepositoryFacility facilityRepository=new RepositoryFacilityImpl();
 
     @Override
-    public Map<Facility, Integer> displayListFacilityMaintenance() {
+    public List<Facility> displayListFacilityMaintenance() {
         return facilityRepository.displayListFacilityMaintenance();
     }
 

@@ -2,27 +2,16 @@ package view;
 
 import Utils.Check;
 import Utils.Regex;
-import controller.person.IControllerEmployee;
-import controller.person.impl.ControllerEmployeeImpl;
+import controller.person.ControllerEmployee;
 import model.Employee;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class MenuEmployeeManagement {
-    private static final IControllerEmployee iControllerEmployee=new ControllerEmployeeImpl();
+    private static final ControllerEmployee iControllerEmployee=new ControllerEmployee();
     private static final MenuEmployeeManagement menuEmployeeManagement=new MenuEmployeeManagement();
     private static boolean valid=false;
-    private static String idEmployee;
-    private static String name;
-    private static String birthDay;
-    private static String wage;
-    private static String phoneNumber;
-    private static String identityCardNumber;
-    private static String gender;
-    private static String email;
-    private static String qualifications;
-    private static String position;
 
     private static final Scanner scanner=new Scanner(System.in);
     private static void displayMenuEmployeeManagement(){
@@ -50,6 +39,7 @@ public class MenuEmployeeManagement {
                     break;
                 case 2:
                     iControllerEmployee.addNew(menuEmployeeManagement.creatAndUpdateEmployee());
+                    System.out.println("Thêm nhân viên thành công");
                     break;
                 case 3:
                     System.out.println("Nhập id nhân viên cần chỉnh sửa:");
@@ -93,6 +83,7 @@ public class MenuEmployeeManagement {
         return employee;
     }
     private static String enterIdEmployee(){
+        String idEmployee;
         do{
             System.out.println("Nhập mã nhân viên: ");
             idEmployee=scanner.nextLine();
@@ -105,6 +96,7 @@ public class MenuEmployeeManagement {
         return idEmployee;
     }
     private static String enterName(){
+        String name;
         do{
             System.out.println("Nhập tên nhân viên: ");
             name=scanner.nextLine();
@@ -113,6 +105,7 @@ public class MenuEmployeeManagement {
         return name;
     }
     private static String enterBirthDay(){
+        String birthDay;
         do{
             System.out.println("Nhập ngày sinh: ");
             birthDay=scanner.nextLine();
@@ -121,11 +114,16 @@ public class MenuEmployeeManagement {
         return birthDay;
     }
     private static String enterGender(){
-        System.out.println("Nhập giới tính: ");
-        gender=scanner.nextLine();
+        String gender;
+        do{
+            System.out.println("Nhập giới tính: ");
+            gender=scanner.nextLine();
+            valid=Check.checkGender(gender);
+        } while(!valid);
         return gender;
     }
     private static String enterIdentityCardNumber(){
+        String identityCardNumber;
         do{
             System.out.println("Nhập số căn cước công dân: ");
             identityCardNumber =scanner.nextLine();
@@ -134,6 +132,7 @@ public class MenuEmployeeManagement {
         return identityCardNumber;
     }
     private static String enterPhoneNumber(){
+        String phoneNumber;
         do{
             System.out.println("Nhập số điện thoại: ");
             phoneNumber=scanner.nextLine();
@@ -142,21 +141,28 @@ public class MenuEmployeeManagement {
         return phoneNumber;
     }
     private static String enterEmail(){
-        System.out.println("Nhập email: ");
-        email=scanner.nextLine();
+        String email;
+        do{
+            System.out.println("Nhập email: ");
+            email=scanner.nextLine();
+            valid=Regex.checkEmail(email);
+        }while(!valid);
         return email;
     }
     private static String enterQualification(){
+        String qualifications;
         System.out.println("Nhập bằng cấp: ");
         qualifications=scanner.nextLine();
         return qualifications;
     }
     private static String enterPosition(){
+        String position;
         System.out.println("Nhập vị trí: ");
         position=scanner.nextLine();
         return position;
     }
     private static String enterWage(){
+        String wage;
         do{
             System.out.println("Nhập lương: ");
             wage=scanner.nextLine();

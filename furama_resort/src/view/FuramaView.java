@@ -11,10 +11,10 @@ public class FuramaView {
                     MenuEmployeeManagement.renderMenuEmployeeManagement();
                     break;
                 case 2:
-                    MenuCustomerManagement.renderMenuEmployeeManagement();
+                    MenuCustomerManagement.renderMenuCustomerManagement();
                     break;
                 case 3:
-                    MenuFacilityManagement.renderMenuEmployeeManagement();
+                    MenuFacilityManagement.renderMenuFacilityManagement();
                     break;
                 case 4:
                     MenuBookingManagement.renderMenuEmployeeManagement();

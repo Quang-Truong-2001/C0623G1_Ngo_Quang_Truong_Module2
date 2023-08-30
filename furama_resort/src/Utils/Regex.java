@@ -25,12 +25,24 @@ public class Regex {
         pattern=Pattern.compile("\\d{1,2}/\\d{1,2}/\\d{4}");
         return pattern.matcher(regex).matches();
     }
+    public static boolean checkEmail(String regex){
+        pattern=Pattern.compile("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
+        return pattern.matcher(regex).matches();
+    }
     public static boolean checkIdCustomer(String regex){
         pattern=Pattern.compile("^KH-[0-9]{4}$");
         return pattern.matcher(regex).matches();
     }
-    public static boolean checkIdService(String regex){
-        pattern=Pattern.compile("^SV[0-9]{2}-[0-9]{4}$");
+    public static boolean checkIdServiceVilla(String regex){
+        pattern=Pattern.compile("^SVVL-[0-9]{4}$");
+        return pattern.matcher(regex).matches();
+    }
+    public static boolean checkIdServiceRoom(String regex){
+        pattern=Pattern.compile("^SVRO-[0-9]{4}$");
+        return pattern.matcher(regex).matches();
+    }
+    public static boolean checkIdServiceHouse(String regex){
+        pattern=Pattern.compile("^SVHO-[0-9]{4}$");
         return pattern.matcher(regex).matches();
     }
 
